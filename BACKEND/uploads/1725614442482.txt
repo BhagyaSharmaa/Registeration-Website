@@ -1,0 +1,10 @@
+{
+  fieldname: 'avatar',
+  originalname: '2020-Bugatti-Centodieci-010-1080.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: 'C:\\Users\\sk8rd\\OneDrive\\Desktop\\Web_Dev\\Backend\\Class_Lecs\\week6\\upload',
+  filename: '2020-Bugatti-Centodieci-010-1080.jpg',
+  path: 'C:\\Users\\sk8rd\\OneDrive\\Desktop\\Web_Dev\\Backend\\Class_Lecs\\week6\\upload\\2020-Bugatti-Centodieci-010-1080.jpg',
+  size: 258603
+}

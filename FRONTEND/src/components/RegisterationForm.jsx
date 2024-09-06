@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
+import { handleSuccess,handleError } from '../utils';
+import { ToastContainer } from 'react-toastify';
 
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({
@@ -37,6 +39,12 @@ const RegistrationForm = () => {
     try {
       const URL = 'http://localhost:8080/register';
       const response = await axios.post(URL, data);
+      const {message , success , ayushID} = response.data;
+      if(success){
+        handleSuccess(`your AYUSH_ID is : ${ayushID}`);
+      } else {
+        handleError("failed to register");
+      }
       console.log(response);
     } catch (err) {
       console.log(err);
@@ -113,6 +121,7 @@ const RegistrationForm = () => {
           </form>
         </div>
       </div>
+      <ToastContainer/>
     </div>
   );
 };

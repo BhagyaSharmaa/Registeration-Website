@@ -16,7 +16,7 @@ Router.route('/')
         const ayushID = generateNumericId();
         const newStartUp = new startUp({ name, email, ayushID });
         await newStartUp.save();
-        res.status(200).json({ message: 'Files uploaded successfully', success: true });
+        res.status(200).json({ message: 'Files uploaded successfully', success: true , ayushID });
       } catch (err) {
         res.status(500).json({ message: 'File upload failed', success: false });
       }
