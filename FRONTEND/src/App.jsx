@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './components/Home';
+import HomePage from './pages/HomePage';
 import RegistrationForm from './components/RegisterationForm';
 import LoginUser from './components/LoginUser'
 import Contact from './components/ContactUs';
@@ -11,7 +11,7 @@ function App() {
     <Router>
       {/* Routes */}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/registration-form" element={<RegistrationForm />} />
         <Route path="/login-user" element={<LoginUser/>} />
         <Route path="/about" element={<About />} />
